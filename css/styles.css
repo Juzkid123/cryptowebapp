@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background image */
+body {
+    font-family: 'Poppins', sans-serif; 
+    background: url('./images/crypt-image.jpg') no-repeat center center/cover; 
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container Styling */
+.container {
+    background: rgba(255, 255, 255, 0.85); /* Slight transparency */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+}
+
+/* Title */
+h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #3D393C;
+    margin-bottom: 10px;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    font-weight: bolder;
+}
+
+/* Description text */
+p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Dropdown styling */
+select {
+    padding: 12px 20px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    transition: border-color 0.3s;
+}
+
+select:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+/* Button Styling */
+#fetch-btn {
+    padding: 12px 25px;
+    background-color:#543728;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#fetch-btn:hover {
+    background-color: #543728;
+    transform: translateY(-2px);
+    box-shadow: 0 15px 45px #f1b151;
+}
+
+/* Price display */
+#crypto-price {
+    margin-top: 30px;
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+    
+
+    h1 {
+        font-size: 24px;
+    }
+
+    select, #fetch-btn {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    #crypto-price {
+        font-size: 20px;
+    }
+}
+/* Footer Styling */
+.small-footer {
+    background-color: #000000cb; 
+    color: #fff; 
+    padding: 10px 20px; 
+    text-align: center; 
+    width: 100%; 
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    font-size: 14px; 
+    
+}
+
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+/* the privacy footer color */
+.you{
+    color: #24b428;
+}
+.me{
+    color: #10e763e1;
+}
+
+
+.footer-last{
+color: #ececec;
+text-decoration: none; 
+margin: 0 5px;
+}
+.footer-links a:hover {
+    text-decoration: underline; 
+}
+
+
+html, body {
+    height: 100%; 
+}
+
+.container {
+    padding-bottom: 30px; 
+}
+.small-footer p{
+    color: #ccc;
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+
